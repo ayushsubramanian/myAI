@@ -97,6 +97,10 @@ export default function Chat() {
     });
   };
 
+  const handleSuggestedQuestion = (question: string) => {
+    sendMessage({ text: question });
+  };
+
   useEffect(() => {
     if (isClient && initialMessages.length === 0 && !welcomeMessageShownRef.current) {
       const welcomeMessage: UIMessage = {
@@ -173,6 +177,19 @@ export default function Chat() {
             {isClient ? (
               <>
                 <MessageWall messages={messages} status={status} durations={durations} onDurationChange={handleDurationChange} />
+                {messages.length === 1 && status === "ready" && (
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full max-w-3xl mt-4 px-2">
+                    {SUGGESTED_QUESTIONS.map((question, index) => (
+                      <button
+                        key={index}
+                        onClick={() => handleSuggestedQuestion(question)}
+                        className="text-left p-3 text-sm rounded-xl border border-border bg-card hover:bg-accent hover:text-accent-foreground transition-colors cursor-pointer"
+                      >
+                        {question}
+                      </button>
+                    ))}
+                  </div>
+                )}
                 {status === "submitted" && (
                   <div className="flex justify-start max-w-3xl w-full">
                     <Loader2 className="size-4 animate-spin text-muted-foreground" />
