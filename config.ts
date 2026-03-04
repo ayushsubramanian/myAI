@@ -37,6 +37,13 @@ export const WELCOME_MESSAGE = `Hello! I'm ${AI_NAME}, an AI assistant created b
 
 export const CLEAR_CHAT_TEXT = "New Chat";
 
+export const SUGGESTED_QUESTIONS = [
+  "What are the 2026 reporting requirements for California SB-253?",
+  "Summarize the changes in Directive (EU) 2026:470.",
+  "How do I score an 'A' in the CDP Climate Change category?",
+  "What is 'Double Materiality' in the CSRD?",
+];
+
 export const MODERATION_DENIAL_MESSAGE_SEXUAL = "I can't discuss explicit sexual content. Please ask something else.";
 export const MODERATION_DENIAL_MESSAGE_SEXUAL_MINORS = "I can't discuss content involving minors in a sexual context. Please ask something else.";
 export const MODERATION_DENIAL_MESSAGE_HARASSMENT = "I can't engage with harassing content. Please be respectful.";
