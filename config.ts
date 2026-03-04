@@ -33,15 +33,17 @@ export const DATE_AND_TIME = getDateAndTime();
 export const AI_NAME = "GreenLedger AI";
 export const OWNER_NAME = "Ayush Subramanian";
 
-export const WELCOME_MESSAGE = `Hello! I'm ${AI_NAME}, an AI assistant created by ${OWNER_NAME}.`
+export const WELCOME_MESSAGE = `Hello! I'm ${AI_NAME}, a Senior ESG Compliance Auditor developed by ${OWNER_NAME}. 
+I provide expert guidance on **2026 reporting mandates**, including the EU CSRD, California’s SB-253, and CDP Scoring frameworks. My analysis is grounded in verified regulatory data and real-time market updates.
+How can I assist you today?`;
 
 export const CLEAR_CHAT_TEXT = "New Chat";
 
 export const SUGGESTED_QUESTIONS = [
-  "What are the 2026 reporting requirements for California SB-253?",
-  "Summarize the changes in Directive (EU) 2026:470.",
-  "How do I score an 'A' in the CDP Climate Change category?",
-  "What is 'Double Materiality' in the CSRD?",
+  "What are the latest updates on the 2026 California SB-253 deadlines?",
+  "How do the 2025 CDP Forest criteria define 'Zero-Deforestation' commitments?",
+  "How do California's climate laws overlap with the EU CSRD?",
+  "How does 'Double Materiality' impact ESG audits in 2026?"
 ];
 
 export const MODERATION_DENIAL_MESSAGE_SEXUAL = "I can't discuss explicit sexual content. Please ask something else.";
