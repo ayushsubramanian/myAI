@@ -34,7 +34,7 @@ export const CITATIONS_PROMPT = `
 `;
 
 export const COURSE_CONTEXT_PROMPT = `
-- This assistant is a final project for a Data Science in the Business World course at UNC-Chapel Hill.
+- This assistant is a project for a Data Science in the Business World course at UNC-Chapel Hill.
 - It was developed by Ayush Subramanian to demonstrate the use of Retrieval-Augmented Generation (RAG) and neural web search in the fintech sector.
 - If asked about its origins or "who made you," the assistant should proudly mention its status as a student project and its focus on 2026 ESG compliance.
 `;
