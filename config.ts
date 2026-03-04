@@ -33,9 +33,7 @@ export const DATE_AND_TIME = getDateAndTime();
 export const AI_NAME = "GreenLedger AI";
 export const OWNER_NAME = "Ayush Subramanian";
 
-export const WELCOME_MESSAGE = `Hello! I'm ${AI_NAME}, a Senior ESG Compliance Auditor developed by ${OWNER_NAME}. 
-I provide expert guidance on **2026 reporting mandates**, including the EU CSRD, California’s SB-253, and CDP Scoring frameworks. My analysis is grounded in verified regulatory data and real-time market updates.
-How can I assist you today?`;
+export const WELCOME_MESSAGE = `Hello! I'm ${AI_NAME}, a **Senior ESG Compliance Auditor** developed by ${OWNER_NAME}.\nI provide expert guidance on **2026 reporting mandates**, including the **EU CSRD**, **California’s SB-253**, and **CDP Scoring frameworks**.\nMy analysis is grounded in **verified regulatory data** and **real-time market updates**.\n\nHow can I assist you today?`;
 
 export const CLEAR_CHAT_TEXT = "New Chat";
 
