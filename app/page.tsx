@@ -145,27 +145,31 @@ export default function Chat() {
       <main className="w-full dark:bg-black h-screen relative">
         <div className="fixed top-0 left-0 right-0 z-50 bg-linear-to-b from-background via-background/50 to-transparent dark:bg-black overflow-visible pb-16">
           <div className="relative overflow-visible">
-            <ChatHeader>
+            <ChatHeader className="bg-transparent backdrop-blur-md border-b border-emerald-100/50">
               <ChatHeaderBlock />
-              <ChatHeaderBlock className="justify-center items-center">
-                <Avatar
-                  className="size-8 ring-1 ring-primary"
-                >
-                  <AvatarImage src="/logo.png" />
-                  <AvatarFallback>
-                    <Image src="/logo.png" alt="Logo" width={36} height={36} />
-                  </AvatarFallback>
-                </Avatar>
-                <p className="tracking-tight">Chat with {AI_NAME}</p>
+              <ChatHeaderBlock className="justify-center items-center gap-3">
+                {/* Clean Logo Container */}
+                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-white shadow-sm ring-1 ring-emerald-100/50 overflow-hidden">
+                  <Image 
+                    src="/logo.png" 
+                    alt="GreenLedger Logo" 
+                    width={32} 
+                    height={32} 
+                    className="object-contain p-0.5"
+                  />
+                </div>
+                <p className="font-semibold tracking-tight text-slate-900 dark:text-white">
+                  Chat with {AI_NAME}
+                </p>
               </ChatHeaderBlock>
               <ChatHeaderBlock className="justify-end">
                 <Button
                   variant="outline"
                   size="sm"
-                  className="cursor-pointer"
+                  className="cursor-pointer border-emerald-100 hover:bg-emerald-50 hover:text-emerald-700 transition-colors"
                   onClick={clearChat}
                 >
-                  <Plus className="size-4" />
+                  <Plus className="size-4 mr-1" />
                   {CLEAR_CHAT_TEXT}
                 </Button>
               </ChatHeaderBlock>
