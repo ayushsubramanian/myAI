@@ -14,7 +14,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "GreenLedger AI",
-  description: "GreenLedger AI",
+  description: "ESG Regulatory Intelligence & 2026 Compliance Auditor",
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({
